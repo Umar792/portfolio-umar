@@ -3,32 +3,29 @@ import "../../Styles/Hero.css";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
-  // const handleType = (count: number) => {
-  //     // access word count number
-  //     console.log(count)}
-  //   }
-
-  //   const handleDone = () => {
-  //     console.log(`Done after 5 loops!`)
-  //   }
   return (
     <div className="hero">
       <div className="hero_box">
         <h2>
-          Welcome to <font>CodingGame</font>
+          Welcome to <font>CodingGame.</font>
         </h2>
         <p>
-          I am a{" "}
+          I am a
           <Typewriter
-            words={["Eat", "Sleep", "Code", "Repeat!"]}
+            words={[
+              "React.js Developer",
+              "Next.js Developer",
+              "Wordpress Desinger",
+              "Node.js Developer",
+              "Express.js Developer",
+              "Mongodb DataBse",
+            ]}
             loop={5}
             cursor
             cursorStyle="|"
             typeSpeed={50}
             deleteSpeed={40}
             delaySpeed={1000}
-            // onLoopDone={handleDone}
-            // onType={handleType}
           />
         </p>
         <p>
