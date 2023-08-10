@@ -45,6 +45,20 @@
 }
 
 /* ========================== media querry  */
+
+@media(max-width : 1800px){
+  .navebar{
+    padding: 12px 130px;
+  }
+}
+
+@media(max-width : 1280px){
+  .navebar{
+    padding: 12px 50px;
+  }
+}
+
+
 @media (max-width: 991px) {
   .navebar {
     padding: 10px 20px !important;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/Hero.css";
+import "../../../Styles/Hero.css";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -26,19 +26,19 @@ const Hero = () => {
           <span className="font-bold text-[#9333EA]">
             <Typewriter
               words={[
-                " a React.js Developer",
-                " a Next.js Developer",
-                " a Wordpress Desinger",
-                " a Node.js Developer",
-                " a Express.js Developer",
-                " using Mongodb DataBse",
+                " a React.js Developer.",
+                " a Next.js Developer.",
+                " a Wordpress Desinger.",
+                " a Node.js Developer.",
+                " a Express.js Developer.",
+                " using Mongodb DataBse.",
               ]}
               loop={Infinity}
               cursor
               cursorStyle="|"
               typeSpeed={50}
               deleteSpeed={40}
-              delaySpeed={1000}
+              delaySpeed={2000}
             />
           </span>
         </p>
