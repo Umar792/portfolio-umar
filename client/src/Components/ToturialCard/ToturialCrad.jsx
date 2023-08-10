@@ -9,7 +9,7 @@ const ToturialCrad = ({ data }) => {
         {data &&
           data.map((item, index) => {
             return (
-              <div className="card_map_box">
+              <div className="card_map_box" key={index}>
                 <div className="crad_map_box_child">
                   <img src={item.image} alt="" />
                   <h2>{item.title} Tutorial</h2>
