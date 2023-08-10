@@ -7,7 +7,19 @@ const Hero = () => {
     <div className="hero">
       <div className="hero_box">
         <h2>
-          Welcome to <font>CodingGame.</font>
+          Welcome to
+          <font>
+            {" "}
+            <Typewriter
+              words={[" CodingGame."]}
+              loop={1}
+              cursor
+              cursorStyle=""
+              typeSpeed={50}
+              deleteSpeed={40}
+              delaySpeed={1000}
+            />
+          </font>
         </h2>
         <p className="text-xl typing">
           I am
