@@ -1,13 +1,29 @@
-.recomemeded_courses{
-    /* border: 2px solid red; */
-    margin: 50px 0px;
+.recomemeded_courses {
+  margin: 10px 0px;
 }
-.recommend_content{
-    /* border: 2px solid white; */
+.recommend_content {
 }
-.recommend_content p{
-    color: gray;
-    width: 850px;
-    margin: 10px auto;
-    text-align: justify;
+.recommend_content p {
+  color: gray;
+  width: 850px;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+@media (max-width: 991px) {
+  .recommend_content p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .recommend_content h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 324px) {
+  .recommend_content h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
 }

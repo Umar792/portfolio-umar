@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../Components/HomeCompoenets/Hero/Hero";
-import RecomemdedCourse from "../Components/HomeCompoenets/RecomemdedCourse";
+import RecomemdedCourse from "../Components/HomeCompoenets/RecomamdedCourse/RecomemdedCourse";
 
 const Home = () => {
   return (

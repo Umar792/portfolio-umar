@@ -15,43 +15,37 @@
   background-color: rgb(202, 199, 199);
   padding: 6px 20px;
   margin: 10px 10px 10px 0px;
-  
 }
 .whitebtn:hover {
   background-color: whitesmoke;
 }
 
-.h2{
-  color: #9333EA;
+.h2 {
+  color: #9333ea;
   font-size: 35px;
 }
 
-
-
-
-
 /* ========================= common padding  */
-.commonPadding{
-  
+.commonPadding {
 }
 
-@media(max-width : 1800px){
-.commonPadding{
-  padding: 20px 130px;
+@media (max-width: 2000px) {
+  .commonPadding {
+    padding: 20px 130px;
+  }
 }
-}
-@media(max-width : 1280px){
-  .commonPadding{
+@media (max-width: 1280px) {
+  .commonPadding {
     padding: 20px 50px;
   }
 }
-@media(max-width : 991px){
-  .commonPadding{
+@media (max-width: 991px) {
+  .commonPadding {
     padding: 20px 20px;
   }
 }
-@media(max-width : 668px){
-  .commonPadding{
+@media (max-width: 668px) {
+  .commonPadding {
     padding: 20px 20px;
   }
 }

@@ -8,8 +8,9 @@
   position: absolute;
   left: 0;
   top: 0;
+  border: 5px solid #111827;
   width: 100%;
-  height: 400px;
+  height: 100%;
   background: url(../Assets/Hero.jpg) no-repeat center center/cover;
   z-index: -1;
 }
@@ -36,68 +37,66 @@
 }
 
 .hero_box h2 font {
-  color: #9333EA;
+  color: #9333ea;
 }
 
-
-
 /* ====================== media querry  */
-@media(max-width : 1800px){
-  .hero_box{
+@media (max-width: 2000px) {
+  .hero_box {
     padding: 20px 130px;
   }
 }
 
-@media(max-width : 1280px){
-  .hero_box{
+@media (max-width: 1280px) {
+  .hero_box {
     padding: 20px 50px;
   }
 }
 
-@media(max-width : 991px){
-  .hero_box{
+@media (max-width: 991px) {
+  .hero_box {
     width: 80%;
   }
-  .hero_box{
+  .hero_box {
     padding: 10px 20px;
   }
 }
 
-@media(max-width : 900px){
-  .hero_box{
+@media (max-width: 900px) {
+  .hero_box {
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-/* justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* justify-content: center;
 align-items: center; */
   }
-  
 }
-@media(max-width : 668px){
-  .paragraph{
+@media (max-width: 668px) {
+  .paragraph {
     width: 100% !important;
   }
 }
 
-@media(max-width : 500px){
-  .hero_box h2{
+@media (max-width: 500px) {
+  .hero_box h2 {
     font-size: 28px;
   }
-  .paragraph{
+  .paragraph {
     font-size: 14px !important;
   }
-  .typing{
+  .typing {
     font-size: 14px;
   }
-  .hero_box{
-    height: 450px;
+
+  .hero {
+    height: auto;
   }
 }
-@media(max-width : 400px){
-  .hero_box h2{
+@media (max-width: 400px) {
+  .hero_box h2 {
     font-size: 20px;
   }
-  .hero_box{
-    padding: 20px ;
+  .hero_box {
+    padding: 20px;
   }
 }

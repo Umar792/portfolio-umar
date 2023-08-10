@@ -7,4 +7,5 @@ body {
   overflow-x: hidden !important;
   background-color: #111827;
   color: white;
+  scroll-behavior: smooth;
 }
