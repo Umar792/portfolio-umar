@@ -44,7 +44,7 @@ const RecomemdedCourse = () => {
   return (
     <div className="recomemeded_courses commonPadding">
       <div className="recommend_content">
-        <h2 className="h2 text-center my-[10px]">Recommended For You.</h2>
+        <h2 className="h2 my-[10px]">Recommended For You.</h2>
         <p>
           Hello and welcome! If you want to start learning programming, you're
           in the right spot. The roadmap below is really useful for beginners
