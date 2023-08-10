@@ -10,7 +10,7 @@ const Navebar = () => {
   const [togglemenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="navebar  bg-[#1F2937] px-[30px] py-[10px] text-[white] flex justify-between place-items-center">
+    <div className="navebar sticky top-0 z-[99]  bg-[#1F2937] px-[30px] py-[10px] text-[white] flex justify-between place-items-center">
       {/* ======================= left Navebar  */}
       <div className="left_navebar">
         <LeftNavebar />
