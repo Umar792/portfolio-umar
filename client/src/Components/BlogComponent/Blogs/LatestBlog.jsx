@@ -42,6 +42,16 @@ const data = [
     discription:
       "We recommend choosing a blog topic that you feel passionate about or interested in. It’s even better when you’re an expert at something, as this helps you to grow your blog through writing quality content to help others.Ask yourself the questions below and try listing at least 10 topic ideas.",
   },
+  {
+    id: 5,
+    author: "micle joun",
+    title: "How to Start a Blog in 2022: 5 Simple Steps",
+    image:
+      "https://websitesetup.org/wp-content/uploads/2023/03/Best-Website-Builders-March-2023.jpg",
+    views: 30,
+    discription:
+      "We recommend choosing a blog topic that you feel passionate about or interested in. It’s even better when you’re an expert at something, as this helps you to grow your blog through writing quality content to help others.Ask yourself the questions below and try listing at least 10 topic ideas.",
+  },
 ];
 
 const LatestBlog = () => {
