@@ -5,7 +5,7 @@
 }
 .recommend_content p {
   color: gray;
-  width: 850px;
+  width: 100%;
   margin: 10px auto;
   text-align: justify;
 }
