@@ -1,0 +1,8 @@
+.about{}
+.about_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-bottom: 2px solid #1F2937;
+}
