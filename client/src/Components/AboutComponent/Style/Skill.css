@@ -1,0 +1,9 @@
+.my_skilles {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .my_skilles {
+    flex-direction: column;
+  }
+}
