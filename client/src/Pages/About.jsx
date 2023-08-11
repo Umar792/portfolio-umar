@@ -5,6 +5,7 @@ import "../Styles/About.css";
 import Section1 from "../Components/AboutComponent/Section1";
 import Skilles from "../Components/AboutComponent/Skilles";
 import Projects from "../Components/AboutComponent/Projects";
+import Workwith from "../Components/AboutComponent/Workwith";
 
 const About = () => {
   return (
@@ -18,6 +19,8 @@ const About = () => {
       <Skilles />
       {/* ==================== projects  */}
       <Projects />
+      {/* ================= work with  */}
+      <Workwith />
     </div>
   );
 };
