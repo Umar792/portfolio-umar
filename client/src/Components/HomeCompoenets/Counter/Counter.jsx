@@ -57,7 +57,7 @@ const Counter = () => {
                   <FaStreetView className="text-indigo-500 text-6xl w-full pb-1" />
                   <h2 className="title-font font-medium text-3xl text-white">
                     {hasAnimated && (
-                      <CountUp start={0} end={1000} duration={6} />
+                      <CountUp start={0} end={2000} duration={6} />
                     )}
                   </h2>
                   <p className="leading-relaxed">Vister</p>

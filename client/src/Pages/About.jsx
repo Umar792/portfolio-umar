@@ -4,6 +4,7 @@ import LottiLoding from "../Components/Layout/Loading/LottiLoding";
 import "../Styles/About.css";
 import Section1 from "../Components/AboutComponent/Section1";
 import Skilles from "../Components/AboutComponent/Skilles";
+import Projects from "../Components/AboutComponent/Projects";
 
 const About = () => {
   return (
@@ -15,6 +16,8 @@ const About = () => {
       <Section1 />
       {/* ===================== Skills  */}
       <Skilles />
+      {/* ==================== projects  */}
+      <Projects />
     </div>
   );
 };
