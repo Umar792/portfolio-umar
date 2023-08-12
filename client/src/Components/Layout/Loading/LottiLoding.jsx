@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 
-const LottiLoding = ({ SVGDATA }) => {
+const LottiLoding = ({ SVGGET }) => {
   return (
     <div
       style={{
@@ -12,9 +12,9 @@ const LottiLoding = ({ SVGDATA }) => {
       }}
     >
       <Lottie
-        animationData={SVGDATA}
+        animationData={SVGGET}
         loop={true}
-        style={{ width: "280px", height: "300px" }}
+        style={{ width: "300px", height: "300px" }}
         className="svges"
       />
     </div>
