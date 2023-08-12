@@ -23,13 +23,6 @@ const Section1 = () => {
               cutting-edge solutions that leave a lasting impact.
             </p>
           </div>
-          {/* <div className="lg:max-w-lg lg:w-full md:w-full">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="https://www.artificialintelligence-news.com/wp-content/uploads/sites/9/2019/11/ai-software-development-artificial-intelligence-developer-here.jpg"
-            />
-          </div> */}
         </div>
       </section>
     </div>

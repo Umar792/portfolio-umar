@@ -10,18 +10,32 @@ const Navebar = () => {
   const [togglemenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="navebar sticky top-0 z-[99]  bg-[#1F2937] px-[30px] py-[10px] text-[white] flex justify-between place-items-center">
+    <div className="navebar sticky top-0 z-[99] bg-[#1F2937] px-[30px] py-[10px] text-[white] flex justify-between place-items-center">
       {/* ======================= left Navebar  */}
       <div className="left_navebar">
-        <LeftNavebar />
+        {/* <LeftNavebar /> */}
         <div className="burger">
-          <IoIosMenu onClick={() => setToggleMenu(true)} />
+          {/* <IoIosMenu onClick={() => setToggleMenu(true)} /> */}
         </div>
       </div>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects">Projects</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
+      </ul>
 
       {/* ==================== right Navebar  */}
       <div className="left_navebar ">
-        <RightNavebar togglemenu={togglemenu} setToggleMenu={setToggleMenu} />
+        {/* <RightNavebar togglemenu={togglemenu} setToggleMenu={setToggleMenu} /> */}
       </div>
     </div>
   );

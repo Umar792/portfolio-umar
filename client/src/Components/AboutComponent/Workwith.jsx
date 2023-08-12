@@ -74,7 +74,7 @@ const Workwith = () => {
           {company &&
             company.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div className="swiper_content">
                     <img src={item?.image} alt="" />
                     <div className="swiper_content_child">
