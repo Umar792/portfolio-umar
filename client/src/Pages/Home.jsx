@@ -4,16 +4,17 @@ import RecomemdedCourse from "../Components/HomeCompoenets/RecomamdedCourse/Reco
 import LatestBlog from "../Components/BlogComponent/Blogs/LatestBlog";
 import Testimonial from "../Components/Testimonials/Testimonial";
 import Counter from "../Components/HomeCompoenets/Counter/Counter";
+import Layout from "../Components/Layout";
 
 const Home = () => {
   return (
-    <>
+    <Layout>
       <Hero />
       <RecomemdedCourse />
       <LatestBlog />
       <Testimonial />
       <Counter />
-    </>
+    </Layout>
   );
 };
 
