@@ -1,7 +1,8 @@
 import React from "react";
 import Lottie from "lottie-react";
+import SVGGET from "../lottifilesSvg/AboutSvg.json";
 
-const LottiLoding = ({ SVGGET }) => {
+const LottiLoding = () => {
   return (
     <div
       style={{
