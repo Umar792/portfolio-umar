@@ -5,20 +5,28 @@ import Skilles from "../Components/AboutComponent/Skilles";
 import Projects from "../Components/AboutComponent/Projects";
 import Workwith from "../Components/AboutComponent/Workwith";
 import Layout from "../Components/Layout";
+import LottiLoding from "../Components/Layout/Loading/LottiLoding";
+import AboutSvg from "../Components/Layout/lottifilesSvg/AboutSvg.json";
+import Findme from "../Components/AboutComponent/Findme";
 
 const About = () => {
   return (
     <Layout>
       <div className="commonPadding about">
-        <div className="about_hero"></div>
+        <div className="about_hero">
+          <LottiLoding SVGGET={AboutSvg} />
+        </div>
         {/* ======================= about_content  */}
         <Section1 />
+
         {/* ===================== Skills  */}
         <Skilles />
         {/* ==================== projects  */}
         <Projects />
         {/* ================= work with  */}
         <Workwith />
+        {/* ========================== find me  */}
+        <Findme />
       </div>
     </Layout>
   );

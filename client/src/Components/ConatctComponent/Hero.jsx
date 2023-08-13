@@ -1,10 +1,12 @@
 import React from "react";
 import "./Style/Hero.css";
+import ConatctSVG from "../Layout/lottifilesSvg/contactSVG.json";
+import LottiLoding from "../Layout/Loading/LottiLoding";
 
 const Hero = () => {
   return (
     <div className="conatct_hero">
-      <h2>hello</h2>
+      <LottiLoding SVGGET={ConatctSVG} />
     </div>
   );
 };
