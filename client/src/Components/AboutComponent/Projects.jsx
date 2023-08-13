@@ -99,10 +99,10 @@ const Projects = () => {
                         </h1>
                         <p className="leading-relaxed">{item.discription}</p>
                         <div className="m-3 w-full flex justify-center place-items-center">
-                          <a href={item.link} target="_blank">
+                          <a href={item.link} target="_blank" rel="noreferrer">
                             <AiFillGithub className="mr-4 text-4xl text-white cursor-pointer" />
                           </a>
-                          <a href={item.link} target="_blank">
+                          <a href={item.link} target="_blank" rel="noreferrer">
                             <AiOutlineGlobal className="mr-4 text-4xl text-white cursor-pointer" />
                           </a>
                         </div>

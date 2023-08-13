@@ -21,7 +21,7 @@ const LottiLoding = ({ SVGGET }) => {
         />
       </div>
     );
-  });
+  }, [SVGGET]);
 
   return Memozation;
 };
