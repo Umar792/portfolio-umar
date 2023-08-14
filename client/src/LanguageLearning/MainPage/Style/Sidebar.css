@@ -1,0 +1,7 @@
+.sidebar_language {
+  border-right: 2px solid gray;
+  height: 100vh;
+  overflow: auto;
+  padding: 10px;
+  background-color: #1e293b;
+}
