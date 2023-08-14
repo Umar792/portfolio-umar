@@ -5,3 +5,23 @@
   padding: 10px;
   background-color: #1e293b;
 }
+
+/* ===============================  */
+.sidebar_data_content {
+}
+.sidebar_data_content h2 {
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+}
+.sidebar_data_content li {
+  list-style: none;
+  color: gray;
+  /* font-weight: bold; */
+  padding-left: 15px;
+  padding-bottom: 3px;
+  font-size: 19px;
+  width: 100%;
+  cursor: pointer;
+}
