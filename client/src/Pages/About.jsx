@@ -8,6 +8,7 @@ import Layout from "../Components/Layout";
 import LottiLoding from "../Components/Layout/Loading/LottiLoding";
 import AboutSvg from "../Components/Layout/lottifilesSvg/AboutSvg.json";
 import Findme from "../Components/AboutComponent/Findme";
+import Education from "../Components/AboutComponent/Education";
 
 const About = () => {
   return (
@@ -21,6 +22,8 @@ const About = () => {
 
         {/* ===================== Skills  */}
         <Skilles />
+        {/* ================================ eduction  */}
+        <Education />
         {/* ==================== projects  */}
         <Projects />
         {/* ================= work with  */}

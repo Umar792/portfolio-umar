@@ -11,7 +11,10 @@ const Sider = ({ data }) => {
         data.map((item, index) => {
           return (
             <div key={index}>
-              <SidebarRiteData title="Introduction" data={item.introduction} />
+              <SidebarRiteData
+                title="Introduction"
+                data={item.introduction && item.introduction}
+              />
             </div>
           );
         })}
@@ -20,7 +23,10 @@ const Sider = ({ data }) => {
         data.map((item, index) => {
           return (
             <div key={index}>
-              <SidebarRiteData title="HTML BASIC TAGS" data={item.basic_tag} />
+              <SidebarRiteData
+                title="HTML BASIC TAGS"
+                data={item.basic_tag || item.basic_tag || item.properties}
+              />
             </div>
           );
         })}
@@ -31,7 +37,9 @@ const Sider = ({ data }) => {
             <div key={index}>
               <SidebarRiteData
                 title="HTML FORMATTING TAGS"
-                data={item.formatingTags}
+                data={
+                  item.formatingTags || item.formatingTags || item.desigining
+                }
               />
             </div>
           );
@@ -48,13 +56,14 @@ const SidebarRiteData = ({ title, data }) => {
   return (
     <div className="sidebar_data_content">
       <h2>{title}</h2>
-      {data.map((item, index) => {
-        return (
-          <div key={index}>
-            <li>{item}</li>
-          </div>
-        );
-      })}
+      {data &&
+        data.map((item, index) => {
+          return (
+            <div key={index}>
+              <li>{item}</li>
+            </div>
+          );
+        })}
     </div>
   );
 };

@@ -97,6 +97,125 @@
   transform: rotate(-90deg);
 }
 
+/* ========================== eduction  */
+
+.timeline-caption-outer {
+  text-align: center;
+}
+
+.timeline-caption-outer .timeline-caption {
+  background: #fff;
+  padding: 17px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.timeline-caption-outer .timeline-caption span {
+  margin-left: 3px;
+}
+
+.timeline .timeline-item {
+  position: relative;
+  padding: 0 40px;
+  margin-top: -60px;
+}
+
+.timeline .timeline-item:first-child {
+  margin-top: 0px;
+  padding-top: 75px;
+}
+
+.dark-version .timeline .timeline-outer {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.timeline .timeline-outer {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 45px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.timeline .timeline-item h5 {
+  margin: 3px 0 10px;
+}
+
+/* timeline arrow  */
+
+.timeline-outer:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 30%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.15);
+}
+
+.timeline .timeline-item:nth-child(odd) .timeline-outer:after {
+  right: 24px;
+}
+
+.timeline .timeline-item:nth-child(even) .timeline-outer:after {
+  left: 24px;
+  border-width: 8px 8px;
+  border-color: transparent rgba(255, 255, 255, 0.15) transparent transparent;
+}
+
+/* timeline line  */
+
+.timeline .timeline-item:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #d1ed5d;
+  top: 0;
+}
+
+.timeline .timeline-item:nth-child(odd):after {
+  right: 0;
+}
+
+.timeline .timeline-item:nth-child(even):after {
+  left: -1px;
+}
+
+.timeline .timeline-item:last-child:after {
+  height: 32%;
+}
+
+/* timeline dots  */
+
+.timeline .timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: #d0ed5d;
+  border-radius: 50px;
+  top: 31%;
+}
+
+.timeline .timeline-item:nth-child(odd):before {
+  right: -4.5px;
+}
+
+.timeline .timeline-item:nth-child(even):before {
+  left: -6px;
+}
+
 @media (max-width: 450px) {
   .swiper_main {
     height: 400px;
