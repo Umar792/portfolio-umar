@@ -2,6 +2,7 @@ import React from "react";
 import Introduction from "../../HTML/HtmlComponents/Introduction";
 import IntroductionCSS from "../../CSS/CSScomponents/Introduction";
 import Workinghtml from "../../HTML/HtmlComponents/Workinghtml";
+import PrerequisiteHtml from "../../HTML/HtmlComponents/PrerequisiteHtml";
 
 const Contentbar = ({ checkName }) => {
   let content = null;
@@ -10,6 +11,8 @@ const Contentbar = ({ checkName }) => {
     content = <Introduction />;
   } else if (checkName === "HTML Working") {
     content = <Workinghtml />;
+  } else if (checkName === "HTML Prerequisite") {
+    content = <PrerequisiteHtml />;
   } else if (checkName === "Information & History") {
     content = <IntroductionCSS />;
   } else if (checkName === "React Home") {
