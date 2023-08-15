@@ -3,6 +3,7 @@ export const sideArray = [
     id: 1,
     language: "html",
     introduction: [
+
       "HTML Introduction",
       "HTML Working",
       "HTML Prerequisite",
@@ -14,7 +15,7 @@ export const sideArray = [
       "HTML Elements",
       "VS Code Installation",
     ],
-    basic_tag: [
+    'HTML BASIC TAGS': [
       "Skeletal Tags",
       "Heading Tags",
       "Paragraph Tag",
@@ -23,13 +24,13 @@ export const sideArray = [
       "Center Tag",
       "Preserve Formatting Tag",
     ],
-    formatingTags: [
+    "HTML FORMATTING TAGS": [
       "Monospaced Font",
       "Text Abbreviation Tag",
       "Acronym Tag",
       "Text tags",
     ],
-    quotations: [
+    '"HTML QUOTATIONS"': [
       "Blockquote Tag",
       "Quote Tag",
       "Text Citation Tag",
@@ -37,25 +38,25 @@ export const sideArray = [
       "Address Text Tag",
       "Code Tag",
     ],
-    attributies: [
+    "HTML ATTRIBUTES": [
       "HTML Attributes",
       "HTML Core Attributes",
       "HTML Internationalization Attributes",
       "HTML Generic Attributes",
     ],
-    links: ["HTML Links"],
-    comments: ["HTML Comments"],
-    images: ["HTML Images"],
-    lists: [
+    "HTML Links": ["HTML Links"],
+    "HTML Comments": ["HTML Comments"],
+    "HTML Images": ["HTML Images"],
+    "HTML LISTS": [
       "HTML Lists",
       "HTML Unordered List",
       "HTML Ordered List",
       "HTML Definition List",
     ],
-    tables: ["HTML Tables"],
-    blockelement: ["HTML Block Elements"],
-    inlineelement: ["HTML Inline Elements"],
-    form: ["Introduction", "More on forms"],
+    "HTML Tables": ["HTML Tables"],
+    "HTML Block Elements": ["HTML Block Elements"],
+    "HTML Inline Elements": ["HTML Inline Elements"],
+    "HTML FORMS": ["Introduction", "More on forms"],
   },
   {
     id: 2,
@@ -68,7 +69,7 @@ export const sideArray = [
       "CSS Selectors",
       "CSS Comments",
     ],
-    properties: [
+    "CSS Properties": [
       "CSS Colors",
       "CSS Backgrounds",
       "CSS Borders",
@@ -94,8 +95,8 @@ export const sideArray = [
       "CSS Forms",
       "CSS Navigation Bar",
     ],
-    desigining: ["CSS Display", "CSS FlexBox", "CSS Grid", "CSS Media Queries"],
-    advance_topic: [
+    "CSS Designing": ["CSS Display", "CSS FlexBox", "CSS Grid", "CSS Media Queries"],
+    "CSS Advance Topics": [
       "CSS 2D Transform",
       "CSS Transitions",
       "CSS Border Images",
@@ -108,6 +109,6 @@ export const sideArray = [
       "CSS Media Queries Advanced",
       "CSS Animations",
     ],
-    faqs: ["Questions"],
+    "CSS FAQs": ["Questions"],
   },
 ];
