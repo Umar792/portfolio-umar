@@ -111,4 +111,95 @@ export const sideArray = [
     ],
     "CSS FAQs": ["Questions"],
   },
+  {
+    id: 3,
+    language: "jsvascript",
+    INTRODUCTION: [
+      "JS Introduction",
+      "JS Execution",
+      "Node.js Installation",
+    ],
+    "JAVASCRIPT VARIABLES": [
+      "What are Variables?",
+      "Variable Naming Rules",
+      "var vs let vs const",
+      "Primitives and Objects",
+      "Operators and Expressions"
+    ],
+    "JAVASCRIPT BASICS": [
+      "If else conditionals",
+      "If else ladder",
+      "Switch case",
+      "Ternary Operator",
+      "For Loops",
+      "While Loop",
+      "Functions"
+    ],
+    "JAVASCRIPT OBJECTS": [
+      "Strings",
+      "Arrays and Array Methods",
+      "Loops with Arrays",
+      "Map, Filter and Reduce",
+      "Date",
+      "Math",
+      "Number",
+      "Boolean"
+    ],
+    "DOM & BOM": [
+      "Window Object",
+      "History Object",
+      "Navigator Object",
+      "Screen Object",
+      "Document Object",
+      "getElementbyId",
+      "getElementsByClassName",
+      "getElementsByName",
+      "getElementsByTagName",
+      "innerHTML",
+      "outerHTML",
+    ],
+    OOPs: [
+      "Class",
+      "Objects",
+      "Constructor",
+      "Static Method",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ]
+
+  },
+  {
+    id: 4,
+    language: "react",
+    " React Tutorial": [
+      "React Home",
+      "React Setup",
+      "React Getting Started",
+      "React ES6",
+      "React Render HTML",
+      "React JSX",
+      "React Components",
+      "React Class",
+      "React Props",
+      "React Events",
+      "React Conditional",
+      "React Lists",
+      "React Forms",
+      "React Router",
+      "React Memo",
+      "React CSS Styling",
+    ],
+    " React Hooks": [
+      "What is a Hook?",
+      "React useState Hook",
+      "React useEffect Hook",
+      "React useContext",
+      "React useRef",
+      "React useReducer",
+      "React useCallback",
+      "React useMemo",
+    ]
+  }
 ];

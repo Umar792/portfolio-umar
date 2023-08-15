@@ -4,6 +4,7 @@ import Contentbar from "./ContentBar/Contentbar";
 import { useParams } from "react-router-dom";
 import "./Style/Index.css";
 import { sideArray } from "../LanguageStaticData/SidebarData/SidebarStaticData";
+import Header from "../LanguageHeadr/Header";
 
 const Index = () => {
   const { name } = useParams();
@@ -12,6 +13,7 @@ const Index = () => {
 
   return (
     <>
+      <Header />
       <div className="language_index">
         <div className="left_part">
           <Sider data={filterSidebar} />

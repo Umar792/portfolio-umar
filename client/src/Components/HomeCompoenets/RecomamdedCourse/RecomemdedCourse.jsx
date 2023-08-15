@@ -32,12 +32,12 @@ const Carddata = [
     image: reactimg,
     link: "/toturial/react",
   },
-  {
-    id: 5,
-    title: "Python",
-    image: python,
-    link: "/toturial/python",
-  },
+  // {
+  //   id: 5,
+  //   title: "Python",
+  //   image: python,
+  //   link: "/toturial/python",
+  // },
 ];
 
 const RecomemdedCourse = () => {

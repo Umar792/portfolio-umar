@@ -1,7 +1,11 @@
 import React from "react";
 
 const Contentbar = () => {
-  return <div>Contentbar</div>;
+  return (
+    <div>
+      <h2>djsdjksdb</h2>
+    </div>
+  );
 };
 
 export default Contentbar;

@@ -33,24 +33,24 @@ const Carddata = [
     image: "https://www.codewithharry.com/img/notes/reactjs.webp",
     link: "/toturial/react",
   },
-  {
-    id: 5,
-    title: "Python",
-    image: "https://www.codewithharry.com/img/notes/python.webp",
-    link: "/toturial/python",
-  },
-  {
-    id: 6,
-    title: "C",
-    image: "https://www.codewithharry.com/img/notes/c.webp",
-    link: "/toturial/C",
-  },
-  {
-    id: 7,
-    title: "C++",
-    image: "https://www.codewithharry.com/img/notes/cpp.webp",
-    link: "/toturial/C++",
-  },
+  // {
+  //   id: 5,
+  //   title: "Python",
+  //   image: "https://www.codewithharry.com/img/notes/python.webp",
+  //   link: "/toturial/python",
+  // },
+  // {
+  //   id: 6,
+  //   title: "C",
+  //   image: "https://www.codewithharry.com/img/notes/c.webp",
+  //   link: "/toturial/C",
+  // },
+  // {
+  //   id: 7,
+  //   title: "C++",
+  //   image: "https://www.codewithharry.com/img/notes/cpp.webp",
+  //   link: "/toturial/C++",
+  // },
   {
     id: 7,
     title: "Node.js",
