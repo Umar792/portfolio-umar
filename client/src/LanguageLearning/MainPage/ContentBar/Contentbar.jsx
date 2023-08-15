@@ -3,6 +3,7 @@ import Introduction from "../../HTML/HtmlComponents/Introduction";
 import IntroductionCSS from "../../CSS/CSScomponents/Introduction";
 import Workinghtml from "../../HTML/HtmlComponents/Workinghtml";
 import PrerequisiteHtml from "../../HTML/HtmlComponents/PrerequisiteHtml";
+import DocumentStructure from "../../HTML/HtmlComponents/DocumentStructure";
 
 const Contentbar = ({ checkName }) => {
   let content = null;
@@ -13,7 +14,11 @@ const Contentbar = ({ checkName }) => {
     content = <Workinghtml />;
   } else if (checkName === "HTML Prerequisite") {
     content = <PrerequisiteHtml />;
-  } else if (checkName === "Information & History") {
+  } else if (checkName === "HTML Document Structure") {
+    content = <DocumentStructure />;
+  }
+  // ===================================
+  else if (checkName === "Information & History") {
     content = <IntroductionCSS />;
   } else if (checkName === "React Home") {
     content = "React";
