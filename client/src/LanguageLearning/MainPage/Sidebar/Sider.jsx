@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Style/Sidebar.css";
 
-const Sider = ({ data }) => {
-  console.log(data);
-
+const Sider = ({ data, setCheckName }) => {
   return (
     <div className="sidebar_language">
       {data &&
@@ -18,6 +16,7 @@ const Sider = ({ data }) => {
                   key={key}
                   title={key.toUpperCase()} // Use the capitalized key as the title
                   data={item[key]}
+                  setCheckName={setCheckName}
                 />
               );
             })}
@@ -31,7 +30,12 @@ export default Sider;
 
 // ---------------------- get data
 
-const SidebarRiteData = ({ title, data }) => {
+const SidebarRiteData = ({ title, data, setCheckName }) => {
+  const [active, setActive] = useState("");
+  const sideliHandle = (item) => {
+    setCheckName(item);
+    setActive(item);
+  };
   return (
     <div className="sidebar_data_content mb-3">
       <h2>{title}</h2>
@@ -40,7 +44,14 @@ const SidebarRiteData = ({ title, data }) => {
         data.map((item, index) => {
           return (
             <div key={index}>
-              <li>{item}</li>
+              {/* <NavLink to={`/toturial/${name}/${item}`}> */}
+              <li
+                className={active === item ? "text-white" : "text-[gray]"}
+                onClick={() => sideliHandle(item)}
+              >
+                {item}
+              </li>
+              {/* </NavLink> */}
             </div>
           );
         })}

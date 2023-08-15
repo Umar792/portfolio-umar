@@ -2,7 +2,6 @@ import React from "react";
 import "../Style/RecommendCourse.css";
 import ToturialCrad from "../../ToturialCard/ToturialCrad";
 import reactimg from "../../../Assets/Languageimg/reactjs.webp";
-import python from "../../../Assets/Languageimg/python.webp";
 import js from "../../../Assets/Languageimg/js.webp";
 import html from "../../../Assets/Languageimg/html.webp";
 import css from "../../../Assets/Languageimg/css.webp";

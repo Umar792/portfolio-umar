@@ -4,8 +4,9 @@
   overflow: auto;
   padding: 10px;
   background-color: #1e293b;
-  position: sticky;
+  position: fixed;
   top: 50px;
+  width: 320px;
 }
 
 /* ===============================  */

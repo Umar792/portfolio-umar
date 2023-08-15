@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Sider from "./Sidebar/Sider";
 import Contentbar from "./ContentBar/Contentbar";
 import { useParams } from "react-router-dom";
@@ -11,16 +11,18 @@ const Index = () => {
   const filterSidebar =
     sideArray && sideArray.filter((item, index) => item.language === name);
 
+  const [checkName, setCheckName] = useState("");
+
   return (
     <>
-      <Header />
+      <Header setCheckName={setCheckName} />
       <div className="language_index">
         <div className="left_part">
-          <Sider data={filterSidebar} />
+          <Sider data={filterSidebar} setCheckName={setCheckName} />
         </div>
         {/* ---------------------  */}
         <div className="right_part">
-          <Contentbar />
+          <Contentbar checkName={checkName} />
         </div>
       </div>
     </>
