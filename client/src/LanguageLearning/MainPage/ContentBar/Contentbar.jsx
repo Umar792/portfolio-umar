@@ -16,6 +16,9 @@ import HTMLparagra from "../../HTML/HtmlComponents/HTMLparagra";
 import Horizontalline from "../../HTML/HtmlComponents/Horizontalline";
 import LineBreak from "../../HTML/HtmlComponents/LineBreak";
 import Centeradiv from "../../HTML/HtmlComponents/Centeradiv";
+import MonospacedFont from "../../HTML/HtmlComponents/MonospacedFont";
+import TextAbrivation from "../../HTML/HtmlComponents/TextAbrivation";
+import AcronymTag from "../../HTML/HtmlComponents/AcronymTag";
 
 const Contentbar = ({ checkName }) => {
   let content = null;
@@ -52,6 +55,12 @@ const Contentbar = ({ checkName }) => {
     content = <LineBreak />;
   } else if (checkName === "Center Tag") {
     content = <Centeradiv />;
+  } else if (checkName === "Monospaced Font") {
+    content = <MonospacedFont />;
+  } else if (checkName === "Text Abbreviation Tag") {
+    content = <TextAbrivation />;
+  } else if (checkName === "Acronym Tag") {
+    content = <AcronymTag />;
   }
   // ===================================
   else if (checkName === "Information & History") {
