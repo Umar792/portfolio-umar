@@ -4,6 +4,13 @@ import IntroductionCSS from "../../CSS/CSScomponents/Introduction";
 import Workinghtml from "../../HTML/HtmlComponents/Workinghtml";
 import PrerequisiteHtml from "../../HTML/HtmlComponents/PrerequisiteHtml";
 import DocumentStructure from "../../HTML/HtmlComponents/DocumentStructure";
+import PageStructure from "../../HTML/HtmlComponents/PageStructure";
+import HTMLeditior from "../../HTML/HtmlComponents/HTMLeditior";
+import HTMLviewsource from "../../HTML/HtmlComponents/HTMLviewsource";
+import HTMLtags from "../../HTML/HtmlComponents/HTMLtags";
+import HTMLelement from "../../HTML/HtmlComponents/HTMLelement";
+import VsCodeInstall from "../../HTML/HtmlComponents/VsCodeInstall";
+import SekletalHTML from "../../HTML/HtmlComponents/SekletalHTML";
 
 const Contentbar = ({ checkName }) => {
   let content = null;
@@ -16,6 +23,20 @@ const Contentbar = ({ checkName }) => {
     content = <PrerequisiteHtml />;
   } else if (checkName === "HTML Document Structure") {
     content = <DocumentStructure />;
+  } else if (checkName === "HTML Page Structure") {
+    content = <PageStructure />;
+  } else if (checkName === "HTML Editors") {
+    content = <HTMLeditior />;
+  } else if (checkName === "HTML View Source") {
+    content = <HTMLviewsource />;
+  } else if (checkName === "HTML Tags") {
+    content = <HTMLtags />;
+  } else if (checkName === "HTML Elements") {
+    content = <HTMLelement />;
+  } else if (checkName === "VS Code Installation") {
+    content = <VsCodeInstall />;
+  } else if (checkName === "Skeletal Tags") {
+    content = <SekletalHTML />;
   }
   // ===================================
   else if (checkName === "Information & History") {
