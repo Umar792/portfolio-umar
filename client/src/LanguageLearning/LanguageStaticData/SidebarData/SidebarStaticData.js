@@ -3,7 +3,6 @@ export const sideArray = [
     id: 1,
     language: "html",
     introduction: [
-
       "HTML Introduction",
       "HTML Working",
       "HTML Prerequisite",
@@ -15,14 +14,14 @@ export const sideArray = [
       "HTML Elements",
       "VS Code Installation",
     ],
-    'HTML BASIC TAGS': [
+    "HTML BASIC TAGS": [
       "Skeletal Tags",
       "Heading Tags",
       "Paragraph Tag",
       "Horizontal Line Tag",
       "Line Break Tag",
       "Center Tag",
-      "Preserve Formatting Tag",
+      // "Preserve Formatting Tag",
     ],
     "HTML FORMATTING TAGS": [
       "Monospaced Font",
@@ -95,7 +94,12 @@ export const sideArray = [
       "CSS Forms",
       "CSS Navigation Bar",
     ],
-    "CSS Designing": ["CSS Display", "CSS FlexBox", "CSS Grid", "CSS Media Queries"],
+    "CSS Designing": [
+      "CSS Display",
+      "CSS FlexBox",
+      "CSS Grid",
+      "CSS Media Queries",
+    ],
     "CSS Advance Topics": [
       "CSS 2D Transform",
       "CSS Transitions",
@@ -114,17 +118,13 @@ export const sideArray = [
   {
     id: 3,
     language: "jsvascript",
-    INTRODUCTION: [
-      "JS Introduction",
-      "JS Execution",
-      "Node.js Installation",
-    ],
+    INTRODUCTION: ["JS Introduction", "JS Execution", "Node.js Installation"],
     "JAVASCRIPT VARIABLES": [
       "What are Variables?",
       "Variable Naming Rules",
       "var vs let vs const",
       "Primitives and Objects",
-      "Operators and Expressions"
+      "Operators and Expressions",
     ],
     "JAVASCRIPT BASICS": [
       "If else conditionals",
@@ -133,7 +133,7 @@ export const sideArray = [
       "Ternary Operator",
       "For Loops",
       "While Loop",
-      "Functions"
+      "Functions",
     ],
     "JAVASCRIPT OBJECTS": [
       "Strings",
@@ -143,7 +143,7 @@ export const sideArray = [
       "Date",
       "Math",
       "Number",
-      "Boolean"
+      "Boolean",
     ],
     "DOM & BOM": [
       "Window Object",
@@ -166,9 +166,8 @@ export const sideArray = [
       "Encapsulation",
       "Inheritance",
       "Polymorphism",
-      "Abstraction"
-    ]
-
+      "Abstraction",
+    ],
   },
   {
     id: 4,
@@ -200,6 +199,6 @@ export const sideArray = [
       "React useReducer",
       "React useCallback",
       "React useMemo",
-    ]
-  }
+    ],
+  },
 ];

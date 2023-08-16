@@ -11,6 +11,11 @@ import HTMLtags from "../../HTML/HtmlComponents/HTMLtags";
 import HTMLelement from "../../HTML/HtmlComponents/HTMLelement";
 import VsCodeInstall from "../../HTML/HtmlComponents/VsCodeInstall";
 import SekletalHTML from "../../HTML/HtmlComponents/SekletalHTML";
+import HTMLheading from "../../HTML/HtmlComponents/HTMLheading";
+import HTMLparagra from "../../HTML/HtmlComponents/HTMLparagra";
+import Horizontalline from "../../HTML/HtmlComponents/Horizontalline";
+import LineBreak from "../../HTML/HtmlComponents/LineBreak";
+import Centeradiv from "../../HTML/HtmlComponents/Centeradiv";
 
 const Contentbar = ({ checkName }) => {
   let content = null;
@@ -37,6 +42,16 @@ const Contentbar = ({ checkName }) => {
     content = <VsCodeInstall />;
   } else if (checkName === "Skeletal Tags") {
     content = <SekletalHTML />;
+  } else if (checkName === "Heading Tags") {
+    content = <HTMLheading />;
+  } else if (checkName === "Paragraph Tag") {
+    content = <HTMLparagra />;
+  } else if (checkName === "Horizontal Line Tag") {
+    content = <Horizontalline />;
+  } else if (checkName === "Line Break Tag") {
+    content = <LineBreak />;
+  } else if (checkName === "Center Tag") {
+    content = <Centeradiv />;
   }
   // ===================================
   else if (checkName === "Information & History") {
