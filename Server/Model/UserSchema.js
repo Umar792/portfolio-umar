@@ -22,6 +22,10 @@ const usreSchema = new Schema({
     minLength: [8, "Password should be greater then 8 character"],
     maxLength: [20, "Password cannot be greater then 20 character"],
   },
+  role: {
+    type: String,
+    default: "user",
+  },
 });
 
 usreSchema.pre("save", function () {

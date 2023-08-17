@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <ScrollToTop />
-      <ToastContainer position="bottom-right" theme="dark" />
+      <ToastContainer position="top-right" theme="dark" />
       <Navebar />
       {children}
       <Footer />
