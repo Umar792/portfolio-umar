@@ -15,6 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+// --------------- connect db
+require("./DB/DB");
+
 // ---------------------- creating server
 const server = app.listen(process.env.PORT, () => {
   console.log(`server is running on port ${process.env.PORT}`);
