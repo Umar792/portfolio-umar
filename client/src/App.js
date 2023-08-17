@@ -8,10 +8,13 @@ import SingleBlog from "./Components/BlogComponent/Blogs/SingleBlog";
 import PageNotFound from "./Components/Layout/PagenotFound/PageNotFound";
 import Registration from "./Pages/Registration";
 import Login from "./Pages/Login";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ToastContainer position="top-right" theme="dark" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

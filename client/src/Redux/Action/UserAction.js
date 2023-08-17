@@ -17,13 +17,12 @@ export const UserRegistration =
       });
       dispatch({ type: "userRegistrationFail" });
       const data = await res.json();
-      console.log(data);
-      if (!data || res.status === 400) {
+      if (res.status === 400 || !data) {
         return toast.error(data.message);
       } else {
-        await dispatch({ type: "registerSuccess" }); // Dispatch success action before navigation
-        await navigate("/login");
         toast.success(data.message);
+        dispatch({ type: "registerSuccess" });
+        navigate("/login");
       }
     } catch (error) {
       dispatch({ type: "userRegistrationERROR", payload: error.message });
