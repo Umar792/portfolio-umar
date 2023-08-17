@@ -3,7 +3,7 @@ const userModel = require("../Model/UserSchema");
 
 const TokenVerify = async (req, res, next) => {
   try {
-    const token = req.headers["Token"];
+    const token = req.headers["token"];
     if (!token) {
       return res.status(400).json({
         success: false,

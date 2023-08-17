@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cloudinary = require("cloudinary");
 
 // ------------------- dotenv
 require("dotenv").config();
@@ -18,8 +19,16 @@ app.use(bodyParser.json());
 // --------------- connect db
 require("./DB/DB");
 
+// ======== cloudinary
+cloudinary.config({
+  cloud_name: "dvgvcifrd",
+  api_key: "651412252829259",
+  api_secret: "RC4IM6i6t_oginPt9h1os5C5BBw",
+});
+
 // --------------- router
 app.use("/", require("./Router/userRouter"));
+app.use("/", require("./Router/BlogRouter"));
 
 // ---------------------- creating server
 const server = app.listen(process.env.PORT, () => {
