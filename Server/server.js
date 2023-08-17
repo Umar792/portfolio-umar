@@ -18,6 +18,9 @@ app.use(bodyParser.json());
 // --------------- connect db
 require("./DB/DB");
 
+// --------------- router
+app.use("/", require("./Router/userRouter"));
+
 // ---------------------- creating server
 const server = app.listen(process.env.PORT, () => {
   console.log(`server is running on port ${process.env.PORT}`);
