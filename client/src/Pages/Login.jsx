@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Layout from "../Components/Layout";
+import { useDispatch } from "react-redux";
+import { loginuser } from "../Redux/Action/UserAction";
 
 const Login = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const loginuserdata = () => {
+    dispatch(loginuser(email, password, navigate));
+  };
+
   return (
     <Layout>
       <div className="commonPadding">
@@ -22,7 +32,7 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setemail(e.target.value)}
                   type="email"
-                  className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                  className="border text-black rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                 />
                 <label className="font-semibold text-sm text-gray-600 pb-1 block">
                   Password
@@ -31,10 +41,11 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setpassword(e.target.value)}
                   type="password"
-                  className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                  className="border text-black rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                 />
                 <button
                   type="button"
+                  onClick={loginuserdata}
                   className="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
                 >
                   <span className="inline-block mr-2">SignUp</span>
