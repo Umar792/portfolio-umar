@@ -86,9 +86,9 @@ const RightNavebar = ({ togglemenu, setToggleMenu }) => {
         <li>
           <NavLink to="/blogs"> Blogs </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/toturials"> Tutorial </NavLink>
-        </li>
+        </li> */}
       </ul>
       {/* ----------------- buttons  */}
       <button className="button">Login</button>

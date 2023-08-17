@@ -1,6 +1,5 @@
 import React from "react";
 import "./ToturialCard.css";
-import { NavLink } from "react-router-dom";
 
 const ToturialCrad = ({ data }) => {
   return (
@@ -13,9 +12,9 @@ const ToturialCrad = ({ data }) => {
                 <div className="crad_map_box_child">
                   <img src={item.image} alt="" />
                   <h2>{item.title} Tutorial</h2>
-                  <NavLink to={item.link}>
+                  <a href={item.link} target="_blank" rel="noreferrer">
                     <button>Start Learning!</button>
-                  </NavLink>
+                  </a>
                 </div>
               </div>
             );

@@ -1,0 +1,32 @@
+.Single_blog {
+}
+.Single_blog h1 {
+  margin: 20px 0px;
+  padding: 5px 0px;
+  font-size: 33px;
+  font-weight: bold;
+}
+.Single_blog img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  margin: 20px 0px;
+}
+
+/* ===================  */
+@media (max-width: 500px) {
+  .single_blog_image {
+    height: 300px !important;
+  }
+  .Single_blog h1 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 350px) {
+  .single_blog_image {
+    height: 250px !important;
+  }
+  .Single_blog img {
+    height: 250px;
+  }
+}
