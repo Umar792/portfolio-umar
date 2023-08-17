@@ -91,8 +91,12 @@ const RightNavebar = ({ togglemenu, setToggleMenu }) => {
         </li> */}
       </ul>
       {/* ----------------- buttons  */}
-      <button className="button">Login</button>
-      <button className="button">SignUp</button>
+      <NavLink to="/login">
+        <button className="button">Login</button>
+      </NavLink>
+      <NavLink to="/signup">
+        <button className="button">SignUp</button>
+      </NavLink>
     </motion.div>
   );
 };

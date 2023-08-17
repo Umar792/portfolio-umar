@@ -6,6 +6,8 @@ import Conatact from "./Pages/Conatact";
 import Blog from "./Pages/Blog";
 import SingleBlog from "./Components/BlogComponent/Blogs/SingleBlog";
 import PageNotFound from "./Components/Layout/PagenotFound/PageNotFound";
+import Registration from "./Pages/Registration";
+import Login from "./Pages/Login";
 
 const App = () => {
   return (
@@ -21,6 +23,9 @@ const App = () => {
         <Route path="/blogs/:id" element={<SingleBlog />} />
         {/* ------------------------ not found route  */}
         <Route path="/*" element={<PageNotFound />} />
+        {/* ---------------------------------------------------  */}
+        <Route path="/signup" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
