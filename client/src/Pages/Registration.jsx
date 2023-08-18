@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import { UserRegistration } from "../Redux/Action/UserAction";
 import Layout from "../Components/Layout";
 

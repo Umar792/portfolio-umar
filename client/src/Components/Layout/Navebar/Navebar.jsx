@@ -5,9 +5,12 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
+import { useSelector } from "react-redux";
 
 const Navebar = () => {
   const [togglemenu, setToggleMenu] = useState(false);
+
+  const isAuthanticated = useSelector((state) => state.user.isAuthanticated);
 
   return (
     <div className="navebar sticky top-0 z-[99] bg-[#1F2937] px-[30px] py-[10px] text-[white] flex justify-between place-items-center">
@@ -21,7 +24,11 @@ const Navebar = () => {
 
       {/* ==================== right Navebar  */}
       <div className="left_navebar ">
-        <RightNavebar togglemenu={togglemenu} setToggleMenu={setToggleMenu} />
+        <RightNavebar
+          togglemenu={togglemenu}
+          setToggleMenu={setToggleMenu}
+          Authanticaed={isAuthanticated}
+        />
       </div>
     </div>
   );
@@ -61,7 +68,7 @@ const LeftNavebar = () => {
 
 // ==================================== right Navebar
 
-const RightNavebar = ({ togglemenu, setToggleMenu }) => {
+const RightNavebar = ({ togglemenu, setToggleMenu, Authanticaed }) => {
   return (
     <motion.div
       className={`${
@@ -91,12 +98,20 @@ const RightNavebar = ({ togglemenu, setToggleMenu }) => {
         </li> */}
       </ul>
       {/* ----------------- buttons  */}
-      <NavLink to="/login">
-        <button className="button">Login</button>
-      </NavLink>
-      <NavLink to="/signup">
-        <button className="button">SignUp</button>
-      </NavLink>
+      {Authanticaed ? (
+        <NavLink to="/admin/dashboard">
+          <button className="button">Dashboard</button>
+        </NavLink>
+      ) : (
+        <>
+          <NavLink to="/login">
+            <button className="button">Login</button>
+          </NavLink>
+          <NavLink to="/signup">
+            <button className="button">SignUp</button>
+          </NavLink>
+        </>
+      )}
     </motion.div>
   );
 };

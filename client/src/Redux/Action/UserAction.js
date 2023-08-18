@@ -32,7 +32,7 @@ export const UserRegistration =
 //   --------------- login
 export const loginuser = (email, password, navigate) => async (dispatch) => {
   try {
-    dispatch({ type: "loadUserRegistration" });
+    dispatch({ type: "loadUserLogin" });
     const res = await fetch("http://localhost:4000/login", {
       method: "POST",
       headers: {
@@ -43,17 +43,41 @@ export const loginuser = (email, password, navigate) => async (dispatch) => {
         password,
       }),
     });
-    dispatch({ type: "userRegistrationFail" });
+    dispatch({ type: "LoadUserLoginFail" });
     const data = await res.json();
     if (res.status === 400 || !data) {
       return toast.error(data.message);
     } else {
       toast.success(data.message);
       localStorage.setItem("myblogtoken", data.Token);
-      dispatch({ type: "registerSuccess" });
+      dispatch({ type: "LoadUserLoginSuccess" });
       navigate("/");
     }
   } catch (error) {
-    dispatch({ type: "userRegistrationERROR", payload: error.message });
+    dispatch({ type: "LoadUserLoginERROR", payload: error.message });
+  };
+}
+//   --------------- Authanticate
+export const AuthanticateUser = () => async (dispatch) => {
+  try {
+    dispatch({ type: "loadUserLogin" });
+    const res = await fetch("http://localhost:4000/loginuser", {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json",
+        token: localStorage.getItem("myblogtoken")
+      },
+
+    });
+    dispatch({ type: "LoadUserLoginFail" });
+    const data = await res.json();
+    if (res.status === 400 || !data) {
+      return toast.error(data.message);
+    } else {
+      toast.success(data.message);
+      dispatch({ type: "LoadUserLoginSuccess" });
+    }
+  } catch (error) {
+    dispatch({ type: "LoadUserLoginERROR", payload: error.message });
   }
-};
+}

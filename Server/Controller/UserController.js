@@ -99,4 +99,28 @@ module.exports = {
       });
     }
   },
+  // ================= get login user
+  loginuser: async (req, res) => {
+    try {
+
+      const user = await userModel.findById(req.user._id);
+      if (!user) {
+        return res.status(400).json({
+          success: false,
+          message: "Plaese Login Your Token Expire"
+        })
+      }
+
+      res.status(200).json({
+        success: true,
+        user
+      })
+
+    } catch (error) {
+      res.status(400).json({
+        success: false,
+        message: error.message,
+      });
+    }
+  }
 };

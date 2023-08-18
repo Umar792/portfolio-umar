@@ -7,8 +7,6 @@ router.post("/signup", controller.CreateUser);
 
 router.post("/login", controller.login);
 
-router.get("/create", TokenVerify, (req, res) => {
-  res.send("good");
-});
+router.get("/loginuser", TokenVerify, controller.loginuser);
 
 module.exports = router;
