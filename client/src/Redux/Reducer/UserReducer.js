@@ -85,4 +85,19 @@ export const UserReducer = createReducer(initialValue, {
     state.isLoading = false;
     state.ERROR = action;
   },
+  // ================================ get all blogs
+  GetSingle: (state) => {
+    state.isLoading = true;
+  },
+  GetSingleFail: (state) => {
+    state.isLoading = false;
+  },
+  GetSingleSuccess: (state, action) => {
+    state.isLoading = false;
+    state.SingleBlog = action.payload;
+  },
+  GetSingleERROR: (state, action) => {
+    state.isLoading = false;
+    state.ERROR = action;
+  },
 });

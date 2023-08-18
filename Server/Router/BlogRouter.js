@@ -5,5 +5,6 @@ const TokenVerify = require("../middleware/TokenVerify");
 
 router.post("/createBlog", TokenVerify, controller.createBlog);
 router.get("/getAllBlogs", controller.getAllBlogs);
+router.get("/getSingleBlog/:id", controller.getSingleBlog);
 
 module.exports = router;

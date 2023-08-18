@@ -17,6 +17,7 @@ export const UserRegistration =
       });
       dispatch({ type: "userRegistrationFail" });
       const data = await res.json();
+      console.log(data);
       if (res.status === 400 || !data) {
         return toast.error(data.message);
       } else {
@@ -132,5 +133,26 @@ export const GetAllBlogs = () => async (dispatch) => {
     }
   } catch (error) {
     dispatch({ type: "GetAllBlogsERROR", payload: error.message });
+  }
+};
+//   --------------- Authanticate
+export const GetSingleBlog = (id) => async (dispatch) => {
+  try {
+    dispatch({ type: "GetSingle" });
+    const res = await fetch(`http://localhost:4000/getSingleBlog/${id}`, {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    dispatch({ type: "GetSingleFail" });
+    const data = await res.json();
+    if (res.status === 400 || !data) {
+      return;
+    } else {
+      dispatch({ type: "GetSingleSuccess", payload: data.blog });
+    }
+  } catch (error) {
+    dispatch({ type: "GetSingleERROR", payload: error.message });
   }
 };

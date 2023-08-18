@@ -52,4 +52,19 @@ module.exports = {
       });
     }
   },
+  // ----------------
+  getSingleBlog: async (req, res) => {
+    try {
+      const blog = await BlogModel.findById(req.params.id);
+      res.status(200).json({
+        success: true,
+        blog,
+      });
+    } catch (error) {
+      res.status(400).json({
+        success: false,
+        message: error.message,
+      });
+    }
+  },
 };
