@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Outlet,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Conatact from "./Pages/Conatact";
@@ -12,25 +18,20 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch, useSelector } from "react-redux";
 import DashBoard from "./Pages/DashBoard";
-import { AuthanticateUser } from "./Redux/Action/UserAction";
+import { AuthanticateUser, GetAllBlogs } from "./Redux/Action/UserAction";
 
 const App = () => {
-
   const isAuthanticated = useSelector((state) => state.user.isAuthanticated);
 
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(AuthanticateUser())
-  }, [])
+    dispatch(AuthanticateUser());
+    dispatch(GetAllBlogs());
+  }, []);
 
   const AdminRoute = () => {
-    return !isAuthanticated ?
-      <Navigate to="/" replace /> :
-
-      <Outlet />
-
-  }
+    return !isAuthanticated ? <Navigate to="/" replace /> : <Outlet />;
+  };
 
   return (
     <BrowserRouter>

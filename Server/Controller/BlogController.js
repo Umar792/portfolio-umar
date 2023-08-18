@@ -24,7 +24,26 @@ module.exports = {
           public_id: mycloud.public_id,
           url: mycloud.secure_url,
         },
-        owner: req.user,
+        owner: req.user._id,
+      });
+      res.status(200).json({
+        success: true,
+        message: "Blogf Created Successfuly",
+      });
+    } catch (error) {
+      res.status(400).json({
+        success: false,
+        message: error.message,
+      });
+    }
+  },
+  // ----------------
+  getAllBlogs: async (req, res) => {
+    try {
+      const blogs = await BlogModel.find();
+      res.status(200).json({
+        success: true,
+        blogs,
       });
     } catch (error) {
       res.status(400).json({

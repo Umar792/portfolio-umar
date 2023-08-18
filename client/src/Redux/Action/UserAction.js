@@ -55,8 +55,8 @@ export const loginuser = (email, password, navigate) => async (dispatch) => {
     }
   } catch (error) {
     dispatch({ type: "LoadUserLoginERROR", payload: error.message });
-  };
-}
+  }
+};
 //   --------------- Authanticate
 export const AuthanticateUser = () => async (dispatch) => {
   try {
@@ -65,9 +65,8 @@ export const AuthanticateUser = () => async (dispatch) => {
       method: "get",
       headers: {
         "Content-Type": "application/json",
-        token: localStorage.getItem("myblogtoken")
+        token: localStorage.getItem("myblogtoken"),
       },
-
     });
     dispatch({ type: "LoadUserLoginFail" });
     const data = await res.json();
@@ -80,4 +79,58 @@ export const AuthanticateUser = () => async (dispatch) => {
   } catch (error) {
     dispatch({ type: "LoadUserLoginERROR", payload: error.message });
   }
-}
+};
+
+//   --------------- create blog
+export const CreateBlog =
+  (title, category, description, BlogImage) => async (dispatch) => {
+    try {
+      dispatch({ type: "CreateBlog" });
+      const res = await fetch("http://localhost:4000/createBlog", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          token: localStorage.getItem("myblogtoken"),
+        },
+        body: JSON.stringify({
+          title,
+          category,
+          description,
+          BlogImage,
+        }),
+      });
+      dispatch({ type: "CreateBlogFail" });
+      const data = await res.json();
+      console.log(data);
+      if (res.status === 400 || !data) {
+        return toast.error(data.message);
+      } else {
+        dispatch({ type: "CreateBlogSuccess" });
+        toast.success(data.message);
+      }
+    } catch (error) {
+      dispatch({ type: "CreateBlogERROR", payload: error.message });
+    }
+  };
+
+//   --------------- Authanticate
+export const GetAllBlogs = () => async (dispatch) => {
+  try {
+    dispatch({ type: "GetAllBlogs" });
+    const res = await fetch("http://localhost:4000/getAllBlogs", {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    dispatch({ type: "GetAllBlogsFail" });
+    const data = await res.json();
+    if (res.status === 400 || !data) {
+      return;
+    } else {
+      dispatch({ type: "GetAllBlogsSuccess", payload: data.blogs });
+    }
+  } catch (error) {
+    dispatch({ type: "GetAllBlogsERROR", payload: error.message });
+  }
+};

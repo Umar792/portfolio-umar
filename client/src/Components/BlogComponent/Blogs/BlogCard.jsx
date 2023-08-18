@@ -9,16 +9,24 @@ const BlogCard = ({ data }) => {
         data.map((item, index) => {
           return (
             <div className="blog_card_box" key={index}>
-              <NavLink to={`/blogs/${index}`}>
+              <NavLink to={`/blogs/${item._id}`}>
                 <div className="blog_card_box_child">
-                  <img src={item.image} alt="" />
+                  <img
+                    src={item && item.BlogImage && item.BlogImage.url}
+                    alt=""
+                  />
                   <h2>{item.title && item.title.slice(0, 100)}..</h2>
-                  <p>{item.discription && item.discription.slice(0, 100)}..</p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        item.description && item.description.slice(0, 150),
+                    }}
+                  />
+
                   <div className="blog_author flex justify-between place-items-center my-2">
-                    <span>
-                      Author: {item.author && item.author.slice(0, 20)}..
-                    </span>
-                    <span>Views :{item.views}</span>
+                    {/* <span>
+                      Author: {item.owner && item.owner.slice(0, 20)}..
+                    </span> */}
                   </div>
                   <button className="whitebtn">Learn more..</button>
                 </div>

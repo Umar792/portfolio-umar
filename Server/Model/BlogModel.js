@@ -22,11 +22,11 @@ const BlogSchema = new Schema({
   },
   BlogImage: {
     public_id: {
-      type: "String",
+      type: String,
       required: true,
     },
     url: {
-      type: "String",
+      type: String,
       required: true,
     },
   },

@@ -1,0 +1,25 @@
+.dashboard {
+}
+.dashboard input {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  margin: 10px 0px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 10px 6px;
+}
+.dashboard button {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.editor {
+  margin: 20px 0px;
+  padding: 10px;
+  color: black;
+}
