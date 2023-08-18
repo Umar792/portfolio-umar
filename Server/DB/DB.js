@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/portfolio")
+  .connect(
+    "mongodb+srv://umar0711509:pk7gjfjoQ2FcMhrJ@cluster0.ttzmo8p.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => {
     console.log("Connected to MongoDB");
   })

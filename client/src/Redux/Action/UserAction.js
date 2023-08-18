@@ -72,9 +72,8 @@ export const AuthanticateUser = () => async (dispatch) => {
     dispatch({ type: "LoadUserLoginFail" });
     const data = await res.json();
     if (res.status === 400 || !data) {
-      return toast.error(data.message);
+      return;
     } else {
-      toast.success(data.message);
       dispatch({ type: "LoadUserLoginSuccess" });
     }
   } catch (error) {

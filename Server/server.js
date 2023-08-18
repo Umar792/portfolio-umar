@@ -9,12 +9,10 @@ require("dotenv").config();
 var cors = require("cors");
 app.use(cors());
 
-// ---------------- body parser
+// body-parser
 var bodyParser = require("body-parser");
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
-// parse application/json
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 // --------------- connect db
 require("./DB/DB");

@@ -35,7 +35,7 @@ const SingleBlog = () => {
             </div>
             {/* ========================= */}
             <div className="Single_blog">
-              <h1>{SingleBlog.title}</h1>
+              <h1>{SingleBlog && SingleBlog.title && SingleBlog.title}</h1>
               {/* <p className="text-[gray] mb-3">
                 Author Name : Muhammad Umar Yousaf.
               </p> */}
@@ -47,7 +47,10 @@ const SingleBlog = () => {
                 <br />
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: SingleBlog.description && SingleBlog.description,
+                    __html:
+                      SingleBlog &&
+                      SingleBlog.description &&
+                      SingleBlog.description,
                   }}
                 />
               </p>

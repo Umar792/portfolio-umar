@@ -32,17 +32,22 @@ module.exports = {
           success: false,
           message: "Email already exist please login",
         });
+      } else {
+        return res.status(400).json({
+          success: false,
+          message: "Only Owner Signup , user Signup Available Soon",
+        });
       }
 
-      await userModel.create({
-        name,
-        email,
-        password,
-      });
-      res.status(200).json({
-        success: true,
-        message: "Account create successfuly",
-      });
+      // await userModel.create({
+      //   name,
+      //   email,
+      //   password,
+      // });
+      // res.status(200).json({
+      //   success: true,
+      //   message: "Account create successfuly",
+      // });
     } catch (error) {
       res.status(400).json({
         success: false,
@@ -102,25 +107,23 @@ module.exports = {
   // ================= get login user
   loginuser: async (req, res) => {
     try {
-
       const user = await userModel.findById(req.user._id);
       if (!user) {
         return res.status(400).json({
           success: false,
-          message: "Plaese Login Your Token Expire"
-        })
+          message: "Plaese Login Your Token Expire",
+        });
       }
 
       res.status(200).json({
         success: true,
-        user
-      })
-
+        user,
+      });
     } catch (error) {
       res.status(400).json({
         success: false,
         message: error.message,
       });
     }
-  }
+  },
 };
